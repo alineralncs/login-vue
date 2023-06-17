@@ -11,6 +11,11 @@ module.exports = {
           claro: '#F7F3FF',
           escuro: '#3F4999',
           hover: '#EB569A'
+        },
+        rosa: {
+          claro: '#EB569A',
+          escuro: '#FF008A',
+          amarelo: '#FFD009'
         }
       }
     },

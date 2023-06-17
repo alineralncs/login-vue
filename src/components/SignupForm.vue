@@ -3,14 +3,14 @@
         <main class="flex px-6 drop-shadow-2xl">
             <section class=" bg-roxo-escuro rounded-l-2xl ">
 
-                <img v-show="validEmail && validSenha" class="w-full" src="../assets/ilustration-svg.svg" />
+                <img v-show="validEmail && validSenha" class="w-full" src="../assets/cadastro.svg" />
                 <img v-show="!validEmail | !validSenha" class="w-full" src="../assets/s_danger.svg" />
 
             </section>
 
             <section class="bg-white p-10 rounded-r-2xl gap-6 flex flex-col justify-center items-center">
                 <div class=" ">
-                    <img class="w-20" src="../assets/Login-logo.svg" />
+                    <img class="w-full" src="../assets/cadastro-name.svg" />
                 </div>
 
                 <div class="text-center hidden">
@@ -51,10 +51,10 @@
                 </form>
 
                 <section class="flex">
-                    <p class="text-sm whitespace-normal">Não tem conta? </p>
+                    <p class="text-sm whitespace-normal">Já posui conta? </p>
                     <button
                         class="font-bold shadow-2xl hover:bg-roxo-hover text-white rounded-full bg-roxo-hover w-full py-2"
-                        type="button"><router-link to="/signup">Cadastre-se </router-link></button>
+                        type="button"><router-link to="/">Login </router-link></button>
                 </section>
             </section>
         </main>
