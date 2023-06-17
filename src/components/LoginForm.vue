@@ -1,7 +1,7 @@
 <template>
     <body class="bg-roxo-claro flex justify-center items-center h-screen">
-        <main class="flex px-6 drop-shadow-2xl">
-            <section class=" bg-roxo-escuro rounded-l-2xl ">
+        <main class=" px-6 drop-shadow-2xl flex">
+            <section class=" bg-roxo-escuro rounded-l-2xl hidden md:flex ">
 
                 <img v-show="validEmail && validSenha" class="w-full" src="../assets/ilustration-svg.svg" />
                 <img v-show="!validEmail | !validSenha" class="w-full" src="../assets/s_danger.svg" />
@@ -10,7 +10,7 @@
 
             <section class="bg-white p-10 rounded-r-2xl gap-6 flex flex-col justify-center items-center">
                 <div class=" ">
-                    <img class="w-20" src="../assets/Login-logo.svg" />
+                    <img class="w-full" src="../assets/logo.svg" />
                 </div>
 
                 <div class="text-center hidden">

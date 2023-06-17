@@ -1,10 +1,10 @@
 <template>
     <body class="bg-roxo-claro flex justify-center items-center h-screen">
         <main class="flex px-6 drop-shadow-2xl">
-            <section class=" bg-roxo-escuro rounded-l-2xl ">
+            <section class=" bg-roxo-escuro rounded-l-2xl hidden md:flex">
 
                 <img v-show="validEmail && validSenha" class="w-full" src="../assets/cadastro.svg" />
-                <img v-show="!validEmail | !validSenha" class="w-full" src="../assets/s_danger.svg" />
+                <img v-show="!validEmail | !validSenha" class="w-full " src="../assets/s_danger.svg" />
 
             </section>
 
@@ -27,8 +27,13 @@
                 </div>
 
                 <form>
-                    <label class="text-sm hidden text-slate-500 font-bold mb-2" for="email">Email</label>
+                    <label class="text-sm  text-slate-500 font-bold mb-2" for="name">Nome</label>
+                    <input
+                        class="text-sm w-full mb-4  pl-3 py-2 rounded-full border focus:outline-none hover:border-roxo-escuro focus:border-roxo-escuro "
+                        id="name" type="name" placeholder="Como você quer ser chamado?"
+                        />
 
+                        <label class="text-sm  text-slate-500 font-bold mb-2" for="email">Email</label>
                     <input
                         class="text-sm w-full mb-4  pl-3 py-2 rounded-full border focus:outline-none hover:border-roxo-escuro focus:border-roxo-escuro "
                         id="email" type="email" placeholder="Digite seu endereço de e-mail" v-model="email"
@@ -37,8 +42,8 @@
                     <!-- <label v-show="!validEmail" class="text-xs text-red-500">Por favor, digite um email válido.</label>
                     <label v-show="!validSenha" class="text-xs text-red-500 mb-2">Por favor, digite uma senha
                         válida.</label> -->
-
-                    <label class="text-sm hidden shadow text-slate-500 font-bold mb-2  w-full" for="senha">Senha</label>
+                    
+                    <label class="text-sm  shadow text-slate-500 font-bold mb-2  w-full" for="senha">Senha</label>
 
                     <input
                         class="text-sm mb-4 w-full pl-3 py-2 rounded-full border focus:outline-none hover:border-roxo-escuro focus:border-roxo-escuro"
